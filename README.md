@@ -13,3 +13,5 @@
 
 12.Connected the library for PHP unit tests.
 13.Created unit tests to check user registration
+Student :
+Kurochkin Vladysalv (code: 30080)
