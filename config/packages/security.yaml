@@ -6,6 +6,15 @@ security:
     providers:
         users_in_memory: { memory: null }
     firewalls:
+        login:
+            pattern: ^/api/login
+            stateless: true
+            json_login:
+                check_path: api_login
+                username_path: email
+                password_path: password
+                success_handler: App\Security\LoginSuccessHandler
+                failure_handler: App\Security\LoginFailureHandler
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false

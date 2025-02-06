@@ -3,3 +3,14 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+app_register:
+    path: /register
+    controller: App\Controller\RegistrationController::register
+
+app_register_success:
+    path: /register/success
+    controller: App\Controller\RegistrationController::success
+
+api_login:
+    path: /api/login
